@@ -15,6 +15,26 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/index-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/index-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/index-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/index-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/index.css": {
 		"aP": 1,
 		"bl": 0,
