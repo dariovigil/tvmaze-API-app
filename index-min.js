@@ -14,14 +14,33 @@ submit.addEventListener('click', function(ev) {
 //
 // REQUEST API
 //
-const req = new Request('http://api.tvmaze.com/search/shows?q=girls');
-const myResponse = fetch(req)
+const req = new Request('http://api.tvmaze.com/shows');
+const shows = fetch(req)
     .then((function(response) {
       return(response.json())
-    .then(function(json) {console.log(json);});  
+    .then(function(shows) {
+      removeLoading();
+      shows.forEach(show => addShow(show))
+    });
     }));
+//
+// TEMPLATE HTML AND ADD SHOW
+//
+const tvshowsContainer = document.querySelector('.tv-shows');
+const loadingSpinner = document.querySelector('.loading');
 
-//console.log(myResponse);
-// console.log(myResponse.PromiseValue);
+function removeLoading() {
+  loadingSpinner.parentNode.removeChild(loadingSpinner);
+}
+function addShow(show) {
+  let newShow = `<article class="tv-show">
+                    <img src="${show.image.medium}" alt="${show.name} cover">
+                    <div class="info">
+                      <h1>${show.name}</h1>
+                      ${show.summary}
+                    </div>
+                  </article>`
+  tvshowsContainer.innerHTML += newShow;
+}
 
 

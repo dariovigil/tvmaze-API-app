@@ -70,7 +70,8 @@
 	"creationDate": 529341689,
 	"displayValue": "tvmaze-API-app",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-chloe"
+	"iconImageName": "meme-chloe",
+	"lastBuiltDate": 529494698
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
