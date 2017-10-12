@@ -11,10 +11,23 @@ body {
 .app-body {
   margin: 0 auto;
   min-height: 75vh;
-  padding-top: 35vh;
+  padding-top: 28vh;
   width: 80%;
 }
 
+.search-form {
+  width: 100%;
+  height: 3em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: .5em;
+  border-radius: 6px;
+  margin-right: 1em;
+  width: 20em;
+}
 .app-header {
   align-items: center;
   color: white;
