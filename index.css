@@ -63,6 +63,18 @@ input[type="text"] {
   width: 100%;
 }
 
+@keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.fadein {
+  opacity:1;
+  -moz-animation   : fadein 1s linear;
+  -webkit-animation: fadein 1s linear;
+  animation        : fadein 1s linear;
+}
+
 .tv-show:hover {
   background-color: #ecf0f1;
 }
